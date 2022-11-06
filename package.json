@@ -1,0 +1,12 @@
+{
+    "name": "dimigo-first-server",
+    "version": "1.0.0",
+    "main": "server.js",
+    "repository": "git@github.com:hyunmui/dimigo-first-server.git",
+    "author": "Hyeonmin Seon <hmsun.es@esgroup.net>",
+    "license": "MIT",
+    "dependencies": {
+        "dayjs": "^1.11.6",
+        "nodemon": "^2.0.20"
+    }
+}
