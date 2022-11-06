@@ -14,6 +14,8 @@ const serveFile = async (filePath, contentType, statusCode, response) => {
         response.end(data);
     } catch (error) {
         eventHandler.emit('log', `${error.name}: ${error.message}`, 'errLog.txt');
+        response.writeHead(500, { 'Content-Type': 'text/plain;charset=utf-8' });
+        response.end('서버에서 오류가 발생하였습니다');
     }
 };
 
